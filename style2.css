@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background: #EFE7DD;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+}
+
+.Form-Container {
+  color: #A39282;
+  position: relative;
+  max-width: fit-content;
+  padding: 25px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px #4A4E69;
+}
+
+.Form-Container header {
+  font-size: 3rem;
+  color: #1C1C1C;
+  font-weight: 500;
+  text-align: center;
+}
+
+.Form-Container h1 {
+  font-size: 2rem;
+  color: #1C1C1C;
+  font-weight: 200;
+  text-align: center;
+}
+
+.Form-Container p {
+  font-size: 1rem;
+  color: #1C1C1C;
+  font-weight: 200;
+  text-align: center;
+}
+
+.Form-Container .form {
+  margin-top: 1.5rem;
+}
+
+.Form-Container .input-box {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input-box label {
+  color: #1C1C1C;
+}
+
+.Form-Container .input-box input {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  /*placeholder'ın büyüklüğü buradan değişiyor*/
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #B8BDB5;
+  border-radius: 6px;
+  padding: 0 15px;
+  background-color: #FCFAF7;
+}
+
+.Form-Container .column2,
+.Form-Container .column3 {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+
+.column2 .input-box {
+  flex: 1 1 calc(50% - 15px);
+  /* 2'li kolon için TODO*/
+}
+
+.column3 .input-box {
+  flex: 1 1 calc(33.333% - 10px);
+  /* 3'lü kolon için */
+}
+
+.button-group {
+  margin-top: 5px;
+}

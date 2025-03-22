@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Club Registiration Page</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <main>
+        <section class="Form-Container">
+            <button class="close-btn">X</button>
+            <header>Welcome to My Book Club</header>
+            <h1>You Can Find the Registration Form Below</h1>
+            <p class="subtitle">This is a place where every page feels like home</p>
+            <!-- Ayrı ayrı form oluşturmak yanlış oluyor!!! -->
+            <form action="#" class="form">
+                <!-- Şu anda form bir yere veri göndermiyor buradaki hash sonradan değişebilir -->
+                <div class="column2">
+
+                    <div class="input-box">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <!-- Farklı input giriş alanlarına neden aynı isim verilmek zorunda bunu anlamadım, input-box2 gibi kullanınca hata verdi -->
+                        <label>Password</label>
+                        <input type="password" placeholder="Create a password" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Confirm Password</label>
+                        <input type="password" placeholder="Confirm your password" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Date of Birth</label>
+                        <input type="date" id="Select" name="date" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Country</label>
+                        <input type="text" placeholder="Select your country">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Age</label>
+                        <input type="text" placeholder="Enter your age">
+                    </div>
+
+                </div>
+            </form>
+
+
+            <form action="#" class="form2">
+                <div class="column3">
+                    <div class="input-box">
+                        <label>Website</label>
+                        <input type="url" placeholder="https://example.com">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Favorite Color</label>
+                        <input type="text" placeholder="###TODO">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Search</label>
+                        <input type="search" placeholder="Search something...">
+                    </div>
+                </div>
+            </form>
+
+            <div class="bio-section">
+                <label>Tell us about yourself</label>
+                <input type="text">
+            </div>
+
+            <div class="İnterests-box">
+                <h3>Choose Your Hobbies/Interests</h3>
+                <div class="interest-options">
+                    <div class="interests">
+                        <input type="checkbox" id="sports" name="hobby">
+                        <label for="sports">Sports</label>
+                    </div>
+
+                    <div class="interests">
+                        <input type="checkbox" id="music" name="hobby">
+                        <label for="music">Music</label>
+                    </div>
+
+                    <!-- Diğer hobileri de ekle buraya!!! -->
+
+                </div>
+            </div>
+
+            <div class="gender-box">
+                <h3>Choose Your Gender</h3>
+                <div class="gender-options">
+                    <div class="gender">
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+
+                    </div>
+
+                    <div class="gender-options">
+                        <div class="gender">
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Male</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="register-btn">Register Now</button>
+                    <button type="reset" class="clear-btn">Clear Form</button>
+                </div>
+
+
+        </section>
+
+    </main>
+</body>
+
+</html>
